@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <h1>Calculadora con JavaScript</h1>
+    <hr>
+
+    <section>
+        <div class="body-calculadora">
+            <div>
+                <!-- Result -->
+                <input type="text" id="resultado" placeholder="0" readonly>
+            </div>
+
+            <!-- Botones 7-8-9 -->
+            <div class="num-container">
+                <button id="boton-7" class="s-button" onclick="numeros(7)">7</button>
+                <button id="boton-8" class="s-button" onclick="numeros(8)">8</button>
+                <button id="boton-9" class="s-button" onclick="numeros(9)">9</button>
+                <button id="boton-sum" class="s-button" onclick="numeros('+')">+</button>
+
+            </div>
+            
+            <!-- Botones 7-8-9 -->
+            <div class="num-container">
+                <button id="boton-4" class="s-button" onclick="numeros(4)">4</button>
+                <button id="boton-5" class="s-button" onclick="numeros(5)">5</button>
+                <button id="boton-6" class="s-button" onclick="numeros(6)">6</button>
+                <button id="boton-res" class="s-button" onclick="numeros('-')">-</button>
+            </div>
+
+            <!-- Botones 7-8-9 -->
+            <div class="num-container">
+                <button id="boton-1" class="s-button" onclick="numeros(1)">1</button>
+                <button id="boton-2" class="s-button" onclick="numeros(2)">2</button>
+                <button id="boton-3" class="s-button" onclick="numeros(3)">3</button>
+                <button id="boton-div" class="s-button" onclick="numeros('/')">/</button>
+            </div>
+
+            <!-- Botones 7-8-9 -->
+            <div class="num-container">
+                <button id="boton-reset" class="s-button" onclick="resetear()">C</button>
+                <button id="boton-0" class="s-button" onclick="numeros(0)">0</button>
+                <button id="boton-punto" class="s-button" onclick="numeros('.')">.</button>
+                <button id="boton-mult" class="s-button" onclick="numeros('*')">X</button>
+            </div>
+
+            <!-- Botones 7-8-9 -->
+            <div class="num-container-2">
+                <button id="boton-der" class="s-button" onclick="numeros('<')"><</button>
+                <button id="boton-izq" class="s-button" onclick="numeros('>')">></button>
+                <button id="boton-equal" class="s-button-2" onclick="operacion()">=</button>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
